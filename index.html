@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"'>
+<title>我的项目</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/mui/3.7.1/css/mui.min.css">
+<style>
+body{
+  background-image:url("https://tuapi.eees.cc/api.php?type=302&category=fengjing");
+  }
+button{
+  border-radius: 15px;
+  background-color: #2983bb;
+  border: none;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  transition: 0.1s;
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  }
+</style>
+</head>
+<body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>  
+jQuery(document).ready(function($) {   
+    $("html,body").click(function(e){   
+        var dfs=[  
+            "富强",  
+            "民主",  
+            "文明",  
+            "和谐",  
+            "自由",  
+            "平等",  
+            "公正",   
+            "法治",   
+            "爱国",   
+            "敬业",   
+            "诚信",   
+            "友善",   
+        ];  
+        var n=Math.floor(Math.random() * dfs.length + 1)-1;  
+        var $i=$("<p>").text(dfs[n]); 
+        var x=e.pageX,y=e.pageY;            
+        $i.css({                          
+            "z-index":99999,   
+            "top":y-20,   
+            "left":x,   
+            "position":"absolute",   
+            "color":"#E94F06",  
+            "font-family":"微软雅黑",  
+            "cursor":"default",  
+            "-moz-user-select": "none",  
+            "-webkit-user-select": "none",  
+            "-ms-user-select": "none",  
+            "-khtml-user-select": "none",  
+            "user-select": "none",  
+        });   
+        $("body").append($i);               
+        $i.animate( {"top":y-180,"opacity":0}, 1500, function(){$i.remove();});     
+        e.stopPropagation();  
+    });  
+});   
+</script>
+<br>
+<button class="button" onclick='window.location="https://a66.rth1.me"'>计算器</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/index.html"'>文本编辑器</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/dt.html"'>地图</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/%E9%98%B6%E4%B9%98.html"'>计算阶乘</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/%E8%8B%B1%E8%AF%AD%E5%A4%A7%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2.html"'>英文大小写转换</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/秒表.html"'>秒表</button><br></br>
+<button class="button" onclick='window.location="https://mz-api.rth1.me"'>每日bing美图</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A3%80%E6%9F%A5.html"'>浏览器检查</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/Mirror/index.html"'>镜子网站</button><br></br>
+<button class="button" onclick='window.location="https://mz3.rth1.me/webgl/index.html"'>流体模拟器</button><br></br>
+<button class="button" onclick='window.location="https://a66.rth1.me/d.html"'>代码雨</button><br></br>
+<button class="button" onclick='window.location="https://mz123.rth1.me/l/index.html"'>罗盘时钟</button><br></br>
+<button class="button" onclick='window.location="http://xn.freeee.ml/"'>新年倒计时</button><br></br>
+<button class="button" onclick='window.location="http://huaban.freeee.ml/"'>画板</button><br></br>
+<button class="button" onclick='window.location="http://mz-sz.rth1.me"'>时钟</button><br></br>
+<button class="button" onclick='window.location="http://dzsr.iblogger.org/"'>电子诗人</button><br></br>
+</body>
+</html>
